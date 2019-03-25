@@ -1,0 +1,15 @@
+
+<!--creer l'html du challenge-->
+<p>
+  <img [src] = "user.photo" [alt]="user.firstName"/>
+  Nom : {{user.name}}
+</p>
+<p>
+  Prénom : {{user.firstName}}
+</p>
+<p id="cacher">
+  Age : {{user.age}}
+</p>
+<input [(ngModel)] = "user.quote"/>
+<button (click)= "CacherAge()">Masquer l'âge</button>
+
