@@ -5,10 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { RouterModule } from '@angular/router';
 
 import { ListFilmsComponent } from './list-films/list-films.component';
 import { HightLightDirective } from './hight-light.directive';
 import { ShowMoviesDirective } from './show-movies.directive';
+import { MenuComponent } from './menu/menu.component';
+import { ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { ShowMoviesDirective } from './show-movies.directive';
     
     HightLightDirective,
     
-    ShowMoviesDirective
+    ShowMoviesDirective,
+    
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]

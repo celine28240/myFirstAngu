@@ -3,10 +3,18 @@
   <h1>
     {{ title }}
   </h1>
-  
+  <ul>
+    <li>
+      <a [routerLink]= "['/sign-up']" >SIGN-UP</a>
+    </li>
+    <li>
+      <a [routerLink]="['/user']">USER</a>
+      </li>
+    
+  </ul>
 
 
- 
+<router-outlet></router-outlet>
 <app-list-films></app-list-films>
 
  
