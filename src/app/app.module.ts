@@ -7,6 +7,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { RouterModule } from '@angular/router';
 
+
 import { ListFilmsComponent } from './list-films/list-films.component';
 import { HightLightDirective } from './hight-light.directive';
 import { ShowMoviesDirective } from './show-movies.directive';
@@ -31,6 +32,7 @@ import { ROUTES } from './app.routes';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+   
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
