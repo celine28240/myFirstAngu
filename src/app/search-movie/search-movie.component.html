@@ -1,0 +1,44 @@
+<form (ngSubmit)="myForm.valid && onSubmit()" [formGroup]="movieForm" #myForm="ngForm">
+  <!--MOVIE ID TITLE-->
+  <div formGroupName="movieIdTitle">
+    <label for="id"> Identifiant :</label>
+    <input type="text" name="id" formControlName="id">
+
+    <label for="title">Titre :</label>
+    <input type="text" name="title" formControlName="title">
+
+    <!--movieIdTitle.errors-->
+    <div *ngIf="movieForm.controls.movieIdTitle.errors && myForm.submitted">
+      <span *ngIf="movieForm.controls.movieIdTitle.errors.isRequired">
+        L'un des 2 champs "Identifiant" ou "Titre"doit être renseigné</span>
+    </div>
+  </div>
+  <!--MOVIE TYPE-->
+  <div>
+    <label for="type">Type :</label>
+    <select name="type" formControlName="type">
+      <option value="film">Films</option>
+      <option value="series">Series</option>
+      <option value="episod">Episodes</option>
+    </select>
+  </div>
+  <!--MOVIE DATE-->
+  <div>
+    <label for="date">Année de sortie en salle :</label>
+    <input type="number" name="date" formControlName="date">
+    <!--errors-->
+    <div *ngIf="movieForm.controls.date.errors &&myForm.submitted">
+      <span *ngIf="movieForm.controls.date.errors.min">L'année doit être comprise entre {{minYear}} et
+         {{maxYear}}.</span>
+    </div>
+  </div>
+  <!--MOVIE FORM-->
+  <div>
+    <label for="form">Fiche :</label>
+    <select name="form" formControlName="form">
+      <option value="complet">Complète</option>
+      <option value="short">Courte</option>
+    </select>
+  </div>
+  <button type="submit">SEARCH</button>
+</form>

@@ -28,7 +28,7 @@ CacherAge(){
   }
   this.onclick.emit(this.label);
 }
-  constructor() { }
+  constructor() { } 
 
   ngOnInit() {
   }

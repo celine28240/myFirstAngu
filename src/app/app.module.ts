@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -13,6 +14,7 @@ import { HightLightDirective } from './hight-light.directive';
 import { ShowMoviesDirective } from './show-movies.directive';
 import { MenuComponent } from './menu/menu.component';
 import { ROUTES } from './app.routes';
+import { SearchMovieComponent } from './search-movie/search-movie.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,15 @@ import { ROUTES } from './app.routes';
     
     ShowMoviesDirective,
     
-    MenuComponent
+    MenuComponent,
+    
+    SearchMovieComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
    
     RouterModule.forRoot(ROUTES)
   ],
