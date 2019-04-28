@@ -15,6 +15,7 @@ import { ShowMoviesDirective } from './show-movies.directive';
 import { MenuComponent } from './menu/menu.component';
 import { ROUTES } from './app.routes';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { SearchMovieComponent } from './search-movie/search-movie.component';
     
     MenuComponent,
     
-    SearchMovieComponent
+    SearchMovieComponent,
+    
+    CocktailListComponent
   ],
   imports: [
     BrowserModule,

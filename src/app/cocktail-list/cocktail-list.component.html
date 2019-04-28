@@ -1,0 +1,13 @@
+<div class="title text-center">
+  <h1>Carte des Cocktails</h1>
+</div>
+
+<div class ="container-fluid liste">
+  <ol>
+    <li *ngFor="let cocktail of list.cocktail">
+      <p>Nom : {{cocktail.name}}</p>
+      <p>Prix : {{cocktail.price}}</p>
+      <img src="{{cocktail.img}}" alt="{{cocktail.name}}">
+    </li>
+  </ol>
+</div>
