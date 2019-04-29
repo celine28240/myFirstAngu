@@ -6,7 +6,7 @@ import {Cocktail} from './cocktail';
 })
 export class CocktailService {
 
-  private cocktailList : Cocktail[]=[
+  public cocktailList : Cocktail[]=[
     new Cocktail ("Cocktail punch exotic", 10, "https://static.cuisineaz.com/680x357/i92044-cocktail-punch-exotique.jpg"),
     new Cocktail ("Cocktail de fruits exotics sans alcool", 8, "https://static.cuisineaz.com/680x357/i87237-cocktail-de-fruits-exotiques-mangue-et-cerises-sans-alcool.jpeg"),
     new Cocktail ("Pétillant au sirop de fruit", 8, "https://static.cuisineaz.com/680x357/i93620-petillant-au-sirop-de-fruit.jpg"),

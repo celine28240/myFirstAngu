@@ -21,7 +21,7 @@ export class SearchMovieComponent implements OnInit {
       id: [''],
       title:['']
     },
-      {validators: isRequiredValidator("id","title")}
+      {validators: isRequiredValidator("title","id")}
     ),
     type:['series'],
     date: ['', rangeDateValidator(this.minYear, this.maxYear)],
