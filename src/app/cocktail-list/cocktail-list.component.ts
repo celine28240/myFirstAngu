@@ -9,12 +9,17 @@ import { Cocktail} from '../cocktail';
 })
 export class CocktailListComponent implements OnInit {
 
-  public cocktails : Cocktail[];
+  public cocktails : Cocktail[]=[];
+  private service : CocktailService;
   
-  constructor(private service:CocktailService) { this.cocktails=[];}
+  constructor(param_service:CocktailService) { this.service=param_service;}
 
-  ngOnInit() {
-    this.cocktails=this.service.getCocktails();
+  ngOnInit(): void {
+    this.service.getCocktails().subscribe(
+      (param_data:Cocktail[]) =>{
+        this.cocktails=param_data;
+      }
+    );
   }
 
 }

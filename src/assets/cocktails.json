@@ -1,0 +1,39 @@
+[
+
+  {
+    "name": "Cocktail punch exotic",
+    "price": 10,
+    "img": "https://static.cuisineaz.com/680x357/i92044-cocktail-punch-exotique.jpg"
+  },
+
+  {
+    "name": "Cocktail de fruits exotics sans alcool",
+    "price": 8,
+    "img": "https://static.cuisineaz.com/680x357/i87237-cocktail-de-fruits-exotiques-mangue-et-cerises-sans-alcool.jpeg"
+  },
+
+  {
+    "name": "Pétillant au sirop de fruit",
+    "price": 8,
+    "img": "https://static.cuisineaz.com/680x357/i93620-petillant-au-sirop-de-fruit.jpg"
+  },
+
+  {
+    "name": "Cocktail au gin, curaçao bleu et citron vert",
+    "price": 10,
+    "img": "https://static.cuisineaz.com/680x357/i86103-cocktail-au-gin-curacao-bleu-et-citron-vert.jpg"
+  },
+
+  {
+    "name": "Cocktail de fruits rouges aux épices",
+    "price":9,
+    "img": "https://static.cuisineaz.com/680x357/i75113-cocktail-de-fruits-rouges-aux-epices.jpg"
+  },
+
+  {
+    "name": "Sangria de Noël",
+    "price":10,
+    "img": "https://static.cuisineaz.com/680x357/i101370-sangria-de-noel.jpg"
+  }
+
+]
